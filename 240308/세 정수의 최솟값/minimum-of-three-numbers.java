@@ -9,7 +9,6 @@ public class Main {
         int c = sc.nextInt();
 
         int min = a > b ? (b > c ? c : b) : (a < c ? a : c);
-        int min2 = (a <= b && a <= c) ? a : b <= c ? b : c;
 
         System.out.println(min);
     }
