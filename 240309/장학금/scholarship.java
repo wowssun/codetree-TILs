@@ -7,15 +7,13 @@ public class Main {
         int m = sc.nextInt();
         int f = sc.nextInt();
 
-        if (m < 90) {
-            System.out.println(0);
-        } else if (f >= 95) {
+        if(m >= 90 && f >= 95){
             System.out.println(100000);
-        } else if (f >= 90) {
+        }else if(m >= 90 && f >= 90){
             System.out.println(50000);
         } else {
             System.out.println(0);
-        }
+    }
 
     }
 }
