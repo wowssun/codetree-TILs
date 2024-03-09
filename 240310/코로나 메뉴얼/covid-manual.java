@@ -32,8 +32,8 @@ public class Main {
             }
         }
 
-        if (a.equals("Y")) {
-            if (aD >= 37) {
+        if (b.equals("Y")) {
+            if (bD >= 37) {
                 grade = "A";  
                 count ++;  
             } else {
@@ -41,15 +41,15 @@ public class Main {
             }
             
         } else {
-             if (aD >= 37) {
+             if (bD >= 37) {
                 grade = "B";    
             } else {
                 grade = "D"; 
             }
         }
 
-        if (a.equals("Y")) {
-            if (aD >= 37) {
+        if (c.equals("Y")) {
+            if (cD >= 37) {
                 grade = "A";  
                 count ++;  
             } else {
@@ -57,7 +57,7 @@ public class Main {
             }
             
         } else {
-             if (aD >= 37) {
+             if (cD >= 37) {
                 grade = "B";    
             } else {
                 grade = "D"; 
