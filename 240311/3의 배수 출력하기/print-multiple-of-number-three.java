@@ -11,7 +11,6 @@ public class Main {
         while (i <= n) {
             if (i % 3 == 0) {
                 System.out.print(i + " ");
-                i++;
             }
             i++;
         }
