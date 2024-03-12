@@ -8,7 +8,8 @@ public class Main {
         int n = sc.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            System.out.println(a += n);
+            a += n
+            System.out.println(a);
         }
     }
 }
