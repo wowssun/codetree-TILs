@@ -5,15 +5,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int cnt = 0;
+        boolean result = false;
 
-        for(int i = 2; i <= n; i++) {
-            if (n % i == 0) {
-                cnt++;
+        for(int i = 2; i < n; i++) {
+            if (n % i == 0) {   // 약수가 있으면 
+                result = true;
             }
         }
-
-        boolean result = (cnt >= 3) ? true : false;
 
         if (result) {
             System.out.print("C");
