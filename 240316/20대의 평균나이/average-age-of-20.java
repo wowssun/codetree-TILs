@@ -8,8 +8,8 @@ public class Main {
 
         while (true) {
             int age = sc.nextInt();
-
-            if (age >= 30) {
+            
+            if (age >= 30 || age <= 19) {
                 break;
             }
             sum += age;
