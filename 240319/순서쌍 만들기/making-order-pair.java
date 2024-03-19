@@ -9,6 +9,7 @@ public class Main {
         for (int i = n; i >= 1; i--) {
             for (int j = n; j >= 1; j--) {
                 System.out.print("(" + i + "," + j + ") ");
+                //System.out.print("(" + (n - i) + "," + (n - j) + ") ");
             }
             System.out.println();
         }
