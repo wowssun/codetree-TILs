@@ -10,7 +10,7 @@ public class Main {
             for (int j = 1; j <= n; j++) {
                 System.out.print(i + " * " + j + " = " + (i * j));
 
-                if (j < 3){
+                if (j < n){
                     System.out.print(", ");
                 } 
                     
