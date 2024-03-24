@@ -18,7 +18,7 @@ public class Main {
                 cnt += 1; // 짝수 행의 시작 전에 cnt를 조정 
                 for(int j = 0; j < n; j++) {
                     System.out.print(cnt + " ");
-                    if(j == 2){
+                    if(j == (n-1)){
                         cnt += 1;
                     } else {
                          cnt += 2; //  cnt가 2씩 증가
