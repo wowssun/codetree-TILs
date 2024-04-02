@@ -15,11 +15,7 @@ public class Main {
                 break;
             }
             cnt++;
-            sum += arr[i];
-            
-            if (cnt == 10) {
-                break;
-            }         
+            sum += arr[i];        
         }
         double avg = (double)sum / cnt;
         System.out.printf("%d %.1f",sum,avg);
