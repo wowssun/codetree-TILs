@@ -11,8 +11,8 @@ public class Main {
         for (int i = 0; i < n; i++){
             int sum = 0;
             for (int j = 0; j < 4; j++) {
-                arr[i] = sc.nextInt();
-                sum += arr[i];
+                arr[j] = sc.nextInt();
+                sum += arr[j];
             }
             double avg = (double)sum / 4;
 
