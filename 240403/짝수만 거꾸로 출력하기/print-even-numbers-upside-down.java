@@ -9,19 +9,11 @@ public class Main {
         int cnt = 0;
 
         for (int i = 0; i < n; i++) {
-            int a = sc.nextInt();
-
-            if (a % 2 == 0) {
-                arr[i] = a;
-                cnt++;
-            } else {
-                arr[i] = -1;
-            }
-            
+            arr[i] = sc.nextInt();         
         }
 
         for (int j = n-1; j >= 0; j--) {
-            if (arr[j] != -1){
+            if (arr[j] % 2 == 0){
                 System.out.print(arr[j] + " ");
             }            
         }
