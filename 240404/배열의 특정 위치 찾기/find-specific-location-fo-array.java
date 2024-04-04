@@ -21,6 +21,6 @@ public class Main {
             sum2 += arr[k];
         }
         double avg = sum2 / 3;
-        System.out.print(" " + avg);
+        System.out.printf(" %.1f", avg);
     }
 }
