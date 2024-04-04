@@ -7,20 +7,24 @@ public class Main {
         int [] arr = new int[10];
          int sum = 0;
          double sum2= 0;
+         int cnt = 0;
 
-        for (int i = 0; i < 10; i++) {
+        for(int i = 0; i < 10; i++) {
             arr[i] = sc.nextInt();
         }
 
-        for (int j = 1; j < 10; j+=2){
-            sum += arr[j];
-        }
-        System.out.print(sum);
-
-        for (int k = 2; k < 10; k+=3){
-            sum2 += arr[k];
-        }
-        double avg = sum2 / 3;
-        System.out.printf(" %.1f", avg);
+        for(int i = 0; i < 10; i++) {
+            if((i + 1) % 2 == 0) {
+                sum += arr[i];
+            }
+                
+            if((i + 1) % 3 == 0) {
+                sum2 += arr[i];
+                cnt++;
+            }    
+      
+    }
+      double avg = sum2 / cnt;
+        System.out.printf("%d %.1f",sum, avg);
     }
 }
