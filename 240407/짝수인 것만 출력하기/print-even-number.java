@@ -7,6 +7,8 @@ public class Main {
         int n = sc.nextInt();
 
         int [] arr = new int[n];
+        int[] newArr = new int[100];
+        int cnt = 0;
 
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -14,8 +16,12 @@ public class Main {
 
         for (int j = 0; j < n; j++) {
             if (arr[j] % 2 == 0) {
-                System.out.print(arr[j] + " ");
+                newArr[cnt++] = arr[j];  // cnt가 제일 마지막 계산 
             }
+        }
+
+        for (int k = 0; k < cnt; k++) {
+            System.out.print(newArr[k] + " ");
         }
     }
 }
