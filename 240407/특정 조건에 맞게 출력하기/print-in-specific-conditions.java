@@ -8,13 +8,12 @@ public class Main {
         int cnt = 0;
 
         for (int i = 0; i < 100; i++) {
-            int num = sc.nextInt();
+            arr[i] = sc.nextInt();
 
-            if (num == 0) {
+            if (arr[i] == 0) {
+                cnt = i;
                 break;
             }
-            arr[i] = num;
-            cnt++;
         }
 
         for (int i = 0; i < cnt; i++) {
