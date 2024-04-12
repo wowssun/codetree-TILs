@@ -31,6 +31,9 @@ public class Main {
                         result = false;
                         break;
                     }
+                }
+                if (result) {
+                    break;
                 } 
             }
         }
