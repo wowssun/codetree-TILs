@@ -6,19 +6,26 @@ public class Main {
 
         int n = sc.nextInt();
         int [] arr = new int[n];
-        int minVal = Integer.MAX_VALUE;
+        
         int cnt = 0;
 
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < n; i++) {
+        int minVal = arr[0];
+        for (int i = 1; i < n; i++) {
             if (arr[i] < minVal) {
                 minVal = arr[i];
-                cnt++;
             }  
         }
+
+        for (int num : arr) {
+            if (minVal == num){
+                cnt++;
+            }
+        }
+
         System.out.printf("%d %d", minVal, cnt);
     }
 }
