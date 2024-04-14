@@ -13,7 +13,7 @@ public class Main {
 
         int maxVal = -1;  // 우선 max를 =1로 지정 
 
-        for (int i = 1; i < n; i++) {
+        for (int i = 0; i < n; i++) {
           if (maxVal < arr[i]) {       // -1과 원소를 비교한다. 
             int cnt = 0;
             for (int j = 0; j < n; j++) {
