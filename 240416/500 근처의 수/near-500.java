@@ -16,8 +16,9 @@ public class Main {
         for (int i = 0; i < 10; i++) {
             if (arr[i] > 500 && minVal > arr[i]){ 
                 minVal = arr[i];
-                
-            } else if (arr[i] < 500 && maxVal < arr[i]) {
+            } 
+            
+            if (arr[i] < 500 && maxVal < arr[i]) {
                 maxVal = arr[i];
             }
         }
