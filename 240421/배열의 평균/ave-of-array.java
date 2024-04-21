@@ -6,7 +6,7 @@ public class Main {
 
         int [][] arr = new int[2][4];
 
-        double sum;
+        double sum = 0;
         double avg;
 
         // 입력 
@@ -28,16 +28,17 @@ public class Main {
         System.out.println();
         
         // 세로 평균
-        for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
             sum = 0;
-            for (int j = 0; j < 2; j++) {
-                sum += arr[j][i];
+            for (int i = 0; i < 2; i++) {
+                sum += arr[i][j];
             }
             avg = sum / 2;
             System.out.printf("%.1f ", avg);
         }
         System.out.println();
 
+        // 전체 펑균
         sum = 0;
         for (int i = 0; i < 2; i++) {
             for (int j = 0; j < 4; j++) {
