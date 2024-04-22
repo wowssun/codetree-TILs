@@ -12,8 +12,8 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                arr[i][j] = num;
-                num++;
+                arr[i][j] = num++;
+                
             }
         }
 
