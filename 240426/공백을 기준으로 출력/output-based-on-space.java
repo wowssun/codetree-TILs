@@ -7,9 +7,16 @@ public class Main {
         String str1 = sc.nextLine();
         String str2 = sc.nextLine();
 
-        String new1 = str1.replace(" ", ""); 
-        String new2 = str2.replace(" ", "");
-
-        System.out.print(new1 + new2);
+        for(int i = 0; i < str1.length(); i++) {
+            if(str1.charAt(i) != ' ') {
+                System.out.print(str1.charAt(i));
+            }    
+        }
+            
+        for(int i = 0; i < str2.length(); i++) {
+            if(str2.charAt(i) != ' ') {
+                System.out.print(str2.charAt(i));
+            }    
+        }
     }
 }
