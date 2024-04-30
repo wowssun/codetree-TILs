@@ -6,14 +6,13 @@ public class Main {
 
         String arr = sc.next();
 
-        if (arr.length() % 2 == 0) {
-            for (int i = arr.length() - 1; i >= 0; i-=2) {
-                System.out.print(arr.charAt(i));
-            }
-        } else {
-            for (int i = arr.length() - 2; i >= 0; i-=2) {
-                System.out.print(arr.charAt(i));
-            }
+        int idx = arr.length() - 1;
+        if (idx % 2 == 0) {
+            idx--;
+        }
+
+        for (int i = idx; i >= 0; i-=2) {
+            System.out.print(arr.charAt(i));
         }
     }
 }
