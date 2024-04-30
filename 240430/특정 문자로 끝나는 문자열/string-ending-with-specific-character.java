@@ -11,13 +11,19 @@ public class Main {
         }
 
         char str = sc.nextLine().charAt(0);
+        int cnt = 0;
 
         for (int i = 0; i < 10; i++) {
             int len = arr[i].length();
 
             if (str == arr[i].charAt(len-1)) {
                 System.out.println(arr[i]);
-            }
+                cnt++;
+            } 
+        }
+
+        if (cnt == 0) {
+             System.out.print("None");
         }
     }
 }
