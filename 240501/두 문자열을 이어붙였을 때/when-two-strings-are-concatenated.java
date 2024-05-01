@@ -16,5 +16,11 @@ public class Main {
             System.out.print("false");
         }
 
+        /* boolean satisfied = true;
+        for(int i = 0; i < c.length(); i++)
+            if(c.charAt(i) != d.charAt(i))
+                satisfied = false;
+        */
+
     }
 }
