@@ -8,10 +8,7 @@ public class Main {
 
         int len = str.length();
 
-        while (true) {
-            if (len == 1) {
-                break;
-            }
+        while (len > 1) {
 
             int n = sc.nextInt();
   
