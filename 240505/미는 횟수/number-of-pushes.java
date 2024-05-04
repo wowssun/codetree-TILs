@@ -12,13 +12,14 @@ public class Main {
         int cnt = 0;
 
         for (int i = 0; i < lenA; i++) {
-            a = a.substring(1) + a.substring(0,1);
+
+            a = a.substring(lenA - 1) + a.substring(0, lenA-1);
             cnt++;
 
             if (a.equals(b)) {
                 System.out.print(cnt);
                 break;
-            } 
+            }
         }
 
         if (cnt == lenA) {
