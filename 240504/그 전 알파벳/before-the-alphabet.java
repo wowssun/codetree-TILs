@@ -7,7 +7,7 @@ public class Main {
         char n = sc.next().charAt(0);
 
         if (n == 'a') {
-            System.out.print('z');
+            n = 'z';
         } else {
             n--;
         }
