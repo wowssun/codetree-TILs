@@ -7,11 +7,11 @@ public class Main {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int c = sc.nextInt();
-        boolean result = false;
+        boolean result = true;
 
         for (int i = a; i <= b; i++) {
-            if (i % c != 0) {
-                result = true;
+            if (i % c == 0) {
+                result = false;
             }
         }  
         if (result) {
