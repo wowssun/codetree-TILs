@@ -14,21 +14,23 @@ public class Main {
         return result;
     }
 
-    public static int multiple3(int a, int b) {
-        int cnt = 0;
-        for (int i = a; i <= b; i++) {
-            if (i % 3 == 0 || exist369(i)) {
-                cnt++;
-            }
-        }
-        return cnt;
+    public static boolean multiple3(int n) {
+       
+        return n % 3 == 0 || exist369(n);
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int a = sc.nextInt();
         int b = sc.nextInt();
-    
-        System.out.print(multiple3(a,b));
+
+        int cnt = 0;
+        for (int i = a; i <= b; i++) {
+            if (multiple3(i)) {
+                cnt++;
+            }
+
+        }
+        System.out.print(cnt);
     }
 }
