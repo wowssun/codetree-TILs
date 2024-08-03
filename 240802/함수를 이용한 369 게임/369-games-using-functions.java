@@ -2,16 +2,13 @@ import java.util.Scanner;
 
 public class Main {
     public static boolean exist369(int n) {
-        boolean result = false;
         while(n != 0){
             if (n % 10 == 3 || n % 10 == 6 || n % 10 == 9) {
-                
-                result = true;
-                break;
+                return true;
             }
             n /= 10;
         }
-        return result;
+        return false;
     }
 
     public static boolean multiple3(int n) {
