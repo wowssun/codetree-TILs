@@ -11,7 +11,7 @@ public class Main {
     public static void minus(int a, int c) {
         System.out.print(a + " - " + c + " = " + (a-c));
     }
-    public static void division(int a, int c) {
+    public static void divide(int a, int c) {
         System.out.print(a + " / " + c + " = " + (int)(a/c));
     }
 
@@ -26,7 +26,7 @@ public class Main {
             case '*' : multiple(a, c); break;
             case '+' : plus(a, c); break;
             case '-' : minus(a, c); break;
-            case '/' : division(a, c); break;
+            case '/' : divide(a, c); break;
             default : System.out.print("False");
         }
     }
