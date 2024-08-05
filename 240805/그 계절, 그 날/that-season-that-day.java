@@ -32,7 +32,7 @@ public class Main {
         if (existSeason(y, m, d)) {
             switch (m) {
             case 3: case 4: case 5: result = "Spring"; break;
-            case 6: case 7: case 8: result ="Summmer"; break;
+            case 6: case 7: case 8: result ="Summer"; break;
             case 9: case 10: case 11: result ="Fall"; break;
             case 12: case 1: case 2: result ="Winter"; 
             }
