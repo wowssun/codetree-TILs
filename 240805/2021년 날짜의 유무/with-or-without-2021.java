@@ -8,16 +8,16 @@ public class Main {
                 if (d < 29) {
                     return true;
                 }
-            }
-           if (m == 4 || m == 6 || m == 9 || m ==11){
-             if (d < 32) {
-                return true;
-             }
-           } else {
-                if (d < 31) {
-                    return true;
-                }
+            } else if (m == 4 || m == 6 || m == 9 || m ==11){
+                    if (d < 32) {
+                        return true;
+                    }
+                } else {
+                    if (d < 31) {
+                        return true;
+                    }
            }
+            
         }
         
         return false;
