@@ -7,12 +7,12 @@ public class Main {
     public static int sumArr(int[] arr) {
         int sum = 0;
         while (m > 0) {
-            if (m % 2 == 0) {
-                sum += arr[m-1];
+            sum += arr[m-1];
+
+            if (m % 2 == 0) { 
                 m /= 2;
             } else {
-                sum += arr[m-1];
-                m -= 1;
+                m--;
             }
         }
         return sum;
