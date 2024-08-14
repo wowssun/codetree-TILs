@@ -14,8 +14,7 @@ public class Main {
        Arrays.sort(strs);
 
        for (String str : strs) {
-        System.out.print(str);
-        System.out.println();
+        System.out.println(str);
        }
     }
 }
