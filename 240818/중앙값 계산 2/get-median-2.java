@@ -13,7 +13,7 @@ public class Main {
 
         for (int i = 1; i <= n; i++) {
             if (i % 2 != 0) {
-                Arrays.sort(arr,0,i);
+                Arrays.sort(arr,1,i+1);
                 System.out.print(arr[i / 2 + 1] + " ");
             }
         }
