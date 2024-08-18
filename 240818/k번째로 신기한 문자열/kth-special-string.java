@@ -17,18 +17,18 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             boolean result = true;
+
             if (arr[i].length() >= pattern.length()) {
                 for (int j = 0; j < pattern.length(); j++) {
-                if (arr[i].charAt(j) != pattern.charAt(j)) {
-                    result = false;
-                    break;
+                    if (arr[i].charAt(j) != pattern.charAt(j)) {
+                        result = false;
+                        break;
+                    }
                 }
-            }
-            }
-            
-            if (result) {
-                hasPattern[idx++] = arr[i];
-            }
+                if (result) {
+                    hasPattern[idx++] = arr[i];
+                }
+            }            
         }
 
         Arrays.sort(hasPattern,0,idx);
