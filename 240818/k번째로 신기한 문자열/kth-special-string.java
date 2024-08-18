@@ -17,11 +17,15 @@ public class Main {
 
         for (int i = 0; i < n; i++) {
             boolean result = true;
-            for (int j = 0; j < pattern.length(); j++) {
+            if (arr[i].length() >= pattern.length()) {
+                for (int j = 0; j < pattern.length(); j++) {
                 if (arr[i].charAt(j) != pattern.charAt(j)) {
                     result = false;
+                    break;
                 }
             }
+            }
+            
             if (result) {
                 hasPattern[idx++] = arr[i];
             }
