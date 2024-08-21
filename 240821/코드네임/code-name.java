@@ -24,11 +24,13 @@ public class Main {
 
         int min = agents[0].score;
         int minIdx = 0;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i < 5; i++) {
            if (agents[i].score < min) {
                 minIdx = i;
+                min = agents[i].score;
            } else {
                 minIdx = minIdx; 
+                min = min;
            }
         }
         System.out.print(agents[minIdx].codeName + " " + agents[minIdx].score);
