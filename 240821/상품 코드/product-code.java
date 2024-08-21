@@ -4,11 +4,6 @@ class Goods{
     String product;
     int code;
 
-    public Goods() {
-        product = "codetree";
-        code = 50;
-    }
-
      public Goods(String product, int code) {
         this.product = product;
         this.code = code;
@@ -22,7 +17,7 @@ public class Main {
         String productName = sc.next();
         int productCode = sc.nextInt();
 
-        Goods go1 = new Goods();
+        Goods go1 = new Goods("codetree", 50);
         Goods go2 = new Goods(productName, productCode);
 
         System.out.printf("product %d is %s\n", go1.code, go1.product);
