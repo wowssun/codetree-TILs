@@ -22,18 +22,13 @@ public class Main {
             agents[i] = new AgentInfo(inputName, inputScore);
         }
 
-        int min = agents[0].score;
         int minIdx = 0;
         for (int i = 1; i < 5; i++) {
-           if (agents[i].score < min) {
+           if (agents[minIdx].score > agents[i].score) {
                 minIdx = i;
-                min = agents[i].score;
-           } else {
-                minIdx = minIdx; 
-                min = min;
-           }
+           } 
         }
-        System.out.print(agents[minIdx].codeName + " " + agents[minIdx].score);
 
+        System.out.print(agents[minIdx].codeName + " " + agents[minIdx].score);
     }
 }
