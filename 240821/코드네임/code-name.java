@@ -27,6 +27,8 @@ public class Main {
         for (int i = 0; i < 5; i++) {
            if (agents[i].score < min) {
                 minIdx = i;
+           } else {
+                minIdx = minIdx; 
            }
         }
         System.out.print(agents[minIdx].codeName + " " + agents[minIdx].score);
